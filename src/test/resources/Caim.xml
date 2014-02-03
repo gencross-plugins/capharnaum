@@ -1,0 +1,1698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<personnage name="Capharnaum" version="1.0" gencrossVersion="1.11"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="http://mrprez.dyndns.org:8080/gencross-web/gencross-plugin.xsd">
+	<phase name="Finitions"/>
+	<phaseList>
+		<phase name="Le sang et la parole"/>
+		<phase name="Vertus"/>
+		<phase name="Caractéristiques"/>
+		<phase name="Figures"/>
+		<phase name="Competences"/>
+		<phase name="Finitions"/>
+		<phase name="Héritier des Dragons"/>
+	</phaseList>
+	<pointPools>
+		<pool name="Vertus Héroïques" remaining="0" total="10" toEmpty="true"/>
+		<pool name="Caractéristiques" remaining="0" total="6" toEmpty="true"/>
+		<pool name="Compétences" remaining="0" total="5" toEmpty="true"/>
+		<pool name="Verbes" remaining="0" total="1" toEmpty="true"/>
+		<pool name="Elements magiques" remaining="0" total="2" toEmpty="true"/>
+		<pool name="Contacts" remaining="4" total="4" toEmpty="true"/>
+	</pointPools>
+	<properties>
+		<property name="Nom" editable="true" canBeRemoved="false">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+		</property>
+		<property name="Sang" editable="false" canBeRemoved="false">
+			<Value class="com.mrprez.gencross.value.StringValue">Saabi</Value>
+			<valueChoice>
+				<Value class="com.mrprez.gencross.value.StringValue">Agalanthéen</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Escarte</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Saabi</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Shiradi</Value>
+			</valueChoice>
+		</property>
+		<property name="Tribu/Nation/Cité-Etat" editable="false" canBeRemoved="false">
+			<Value class="com.mrprez.gencross.value.StringValue">Ibn Malik Abd-al-Hassan</Value>
+			<valueChoice>
+				<Value class="com.mrprez.gencross.value.StringValue">Ibn Malik Abd-al-Hassan</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Ibn Mussah Abd-al-Hassan</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Ibn Rachid Abd-al-Hassan</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Ibn Yucef Abd-al-Salif</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Ibn Aziz Abd-al-Salif</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Ibn Khalil Abd-al-Salif</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Ibn Tufiq Abd-al-Tarek</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Ibn Mimoun Abd-al-Tarek</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Ibn Mammûd Abd-al-Tarek</Value>
+			</valueChoice>
+		</property>
+		<property name="Parole" editable="false" canBeRemoved="false">
+			<Value class="com.mrprez.gencross.value.StringValue">Le Sentier de cimeterres de feu (saabi / malik)</Value>
+			<valueChoice>
+				<Value class="com.mrprez.gencross.value.StringValue">Le Sentier de cimeterres de feu (saabi / malik)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">L'alchimie des hommes (saabi / mussah)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Le soupçon des traîtres (saabi / rachid)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les dunes de Safran (saabi / yucef)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les enfants du souk (saabi / aziz)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les Walad Badiya (saabi / khalil)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les Marcheurs aux semelles de sang (saabi / tufiq)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les filles aimées d’Agushaya (saabi / mimoun)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les prieurs des sables (saabi / mammud)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les Lions Rouges de Shirad (shiradi / ashkenim)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">La Voix céleste de Shirad (shiradi / pharatim)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Le cœur sacré de Shirad (shiradi / salonim)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les assassins de la Lune de Sang (shiradi / salonim)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">L’Ordre des myrmidons théréméens (agalantheen / thereme)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les Auriges fragrantins (agalantheen / fragrance)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les Bacchorantes étrusiens (agalantheen / etrusie)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les Duellistes de San Llorente de Valladòn (escarte / aragon)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Sainte Gerta qui pourfendit le dragon (escarte / dorkadie)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Ordre du Temple de Sagrada (escarte / occidentine)</Value>
+			</valueChoice>
+		</property>
+		<property name="Occupation" editable="true" canBeRemoved="false">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+		</property>
+		<property name="Vertus Héroïques" editable="false" canBeRemoved="false">
+			<propertiesList fixe="true" open="false">
+				<propertyChoice/>
+				<properties>
+					<property name="Bravoure" editable="true" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">6</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue" offset="1">6</Value>
+						</max>
+					</property>
+					<property name="Fidélité" editable="true" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue" offset="1">6</Value>
+						</max>
+					</property>
+					<property name="Foi" editable="true" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue" offset="1">6</Value>
+						</max>
+					</property>
+				</properties>
+			</propertiesList>
+			<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+				<pointPool>Vertus Héroïques</pointPool>
+				<args>
+					<arg key="startValue">0.0</arg>
+					<arg key="factor">1.0</arg>
+				</args>
+			</historyFactory>
+		</property>
+		<property name="Héroïsme" editable="false" canBeRemoved="false">
+			<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+		</property>
+		<property name="Caractéristiques" editable="false" canBeRemoved="false">
+			<propertiesList fixe="true" open="false">
+				<propertyChoice/>
+				<properties>
+					<property name="Coordination" editable="true" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">4</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue" offset="1">4</Value>
+						</max>
+					</property>
+					<property name="Charme" editable="true" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue" offset="1">4</Value>
+						</max>
+					</property>
+					<property name="Puissance" editable="true" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue" offset="1">4</Value>
+						</max>
+					</property>
+					<property name="Souffle" editable="true" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue" offset="1">4</Value>
+						</max>
+					</property>
+					<property name="Sagesse" editable="true" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue" offset="1">4</Value>
+						</max>
+					</property>
+				</properties>
+			</propertiesList>
+			<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+				<pointPool>Caractéristiques</pointPool>
+				<args>
+					<arg key="startValue">0.0</arg>
+					<arg key="factor">1.0</arg>
+				</args>
+			</historyFactory>
+		</property>
+		<property name="Combat" editable="false" canBeRemoved="false">
+			<propertiesList fixe="true" open="false">
+				<propertyChoice/>
+				<properties>
+					<property name="Défense" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">11</Value>
+					</property>
+					<property name="PV" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">10</Value>
+					</property>
+					<property name="Init. Max." editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+					</property>
+					<property name="Trempe" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+					</property>
+				</properties>
+			</propertiesList>
+		</property>
+		<property name="Compétences" editable="false" canBeRemoved="false">
+			<propertiesList fixe="true" open="true">
+				<propertyChoice/>
+				<properties>
+					<property name="L'Aventurier" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+						<propertiesList fixe="true" open="false">
+							<propertyChoice/>
+							<properties>
+								<property name="Epreuve" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">4</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">4</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">5</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Equitation" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">6</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">5</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Contes*" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">5</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">5</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Périples" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">5</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">5</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property name="Le Sage" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+						<propertiesList fixe="true" open="false">
+							<propertyChoice/>
+							<properties>
+								<property name="Science" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Enseigner*" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Peuples &amp; Histoire" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Percevoir" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property name="Le Prince" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+						<propertiesList fixe="true" open="false">
+							<propertyChoice/>
+							<properties>
+								<property name="Ne pas perdre la face" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">4</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Elégance" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">4</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Flatter*" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">4</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Négoce &amp; Salamalecs" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">5</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property name="Le Sorcier" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+						<propertiesList fixe="true" open="false">
+							<propertyChoice/>
+							<properties>
+								<property name="Inspiration" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Prière" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Sacrifice" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Verbe sacré" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property name="Le Guerrier" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+						<propertiesList fixe="true" open="false">
+							<propertyChoice/>
+							<properties>
+								<property name="Arme" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">5</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">5</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Commander" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">4</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Entraînement" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">4</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Impressionner" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property name="Le Poète" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+						<propertiesList fixe="true" open="false">
+							<propertyChoice/>
+							<properties>
+								<property name="Galvaniser*" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Comédie" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Poésie" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Musique" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property name="Le Malandrin" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+						<propertiesList fixe="true" open="false">
+							<propertyChoice/>
+							<properties>
+								<property name="Assassinat*" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Détrousser" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Discrétion" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="S'introduire" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property name="Le Travailleur" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+						<propertiesList fixe="true" open="false">
+							<propertyChoice/>
+							<properties>
+								<property name="Agriculture" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Artisanat" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Compagnonnage" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+								<property name="Tenir le coup*" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+									</min>
+									<max>
+										<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+									</max>
+									<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+										<pointPool>Compétences</pointPool>
+										<args>
+											<arg key="startValue">0.0</arg>
+											<arg key="factor">1.0</arg>
+										</args>
+									</historyFactory>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+				</properties>
+			</propertiesList>
+		</property>
+		<property name="Magie" editable="false" canBeRemoved="false">
+			<propertiesList fixe="true" open="false">
+				<propertyChoice/>
+				<properties>
+					<property name="Verbes" editable="false" canBeRemoved="false">
+						<propertiesList fixe="false" open="false">
+							<propertyChoice>
+								<property name="Créer" editable="false" canBeRemoved="true"/>
+								<property name="Transformer" editable="false" canBeRemoved="true"/>
+								<property name="Détruire" editable="false" canBeRemoved="true"/>
+							</propertyChoice>
+							<properties>
+								<property name="Créer" editable="false" canBeRemoved="true"/>
+							</properties>
+						</propertiesList>
+						<historyFactory class="com.mrprez.gencross.history.ConstantHistoryFactory">
+							<pointPool>Verbes</pointPool>
+							<args>
+								<arg key="cost">1</arg>
+							</args>
+						</historyFactory>
+					</property>
+					<property name="Elements magiques" editable="false" canBeRemoved="false">
+						<propertiesList fixe="false" open="true">
+							<defaultProperty>
+								<property name="" editable="false" canBeRemoved="true"/>
+							</defaultProperty>
+							<propertyChoice/>
+							<properties>
+								<property name="az" editable="false" canBeRemoved="true"/>
+								<property name="ez" editable="false" canBeRemoved="true"/>
+							</properties>
+						</propertiesList>
+						<historyFactory class="com.mrprez.gencross.history.ConstantHistoryFactory">
+							<pointPool>Elements magiques</pointPool>
+							<args>
+								<arg key="cost">1</arg>
+							</args>
+						</historyFactory>
+					</property>
+				</properties>
+			</propertiesList>
+		</property>
+		<property name="Héritage" editable="false" canBeRemoved="false">
+			<propertiesList fixe="true" open="false">
+				<propertyChoice/>
+				<properties>
+					<property name="Sang 1" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.StringValue">13</Value>
+						<valueChoice>
+							<Value class="com.mrprez.gencross.value.StringValue">3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">13</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">14</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">15</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">16</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">17</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">18</Value>
+						</valueChoice>
+					</property>
+					<property name="Sang 2" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.StringValue">6</Value>
+						<valueChoice>
+							<Value class="com.mrprez.gencross.value.StringValue">3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">13</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">14</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">15</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">16</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">17</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">18</Value>
+						</valueChoice>
+						<propertiesList fixe="true" open="false">
+							<propertyChoice/>
+							<properties>
+								<property name="Choix compétence" editable="true" canBeRemoved="true">
+									<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier#Arme</Value>
+									<valueChoice>
+										<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier#Arme</Value>
+										<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier#Epreuve</Value>
+										<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier#Verbe sacré</Value>
+									</valueChoice>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property name="Figure principale" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.12</Value>
+						<valueChoice>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.2</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.12</Value>
+						</valueChoice>
+					</property>
+					<property name="Figure 1" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.StringValue"></Value>
+						<valueChoice>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.2</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.2</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.2</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.2</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.2</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.2</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.2</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.2</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.12</Value>
+						</valueChoice>
+					</property>
+					<property name="Figure 2" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.StringValue"></Value>
+						<valueChoice>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.2</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.2</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sage.12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.2</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Prince.12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.2</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Sorcier.12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.2</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier.12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.2</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Poète.12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.2</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Malandrin.12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.2</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur.12</Value>
+						</valueChoice>
+					</property>
+					<property name="Dragon" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.StringValue">9</Value>
+						<valueChoice>
+							<Value class="com.mrprez.gencross.value.StringValue">3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">13</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">14</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">15</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">16</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">17</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">18-Dé Dragon</Value>
+						</valueChoice>
+						<propertiesList fixe="true" open="false">
+							<propertyChoice/>
+							<properties>
+								<property name="Choix compétence" editable="true" canBeRemoved="true">
+									<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier#Equitation</Value>
+									<valueChoice>
+										<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier#Epreuve</Value>
+										<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier#Equitation</Value>
+										<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier#Contes*</Value>
+										<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier#Périples</Value>
+										<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur#Agriculture</Value>
+										<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur#Artisanat</Value>
+										<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur#Compagnonnage</Value>
+										<Value class="com.mrprez.gencross.value.StringValue">Le Travailleur#Tenir le coup*</Value>
+									</valueChoice>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+				</properties>
+			</propertiesList>
+		</property>
+		<property name="Possessions" editable="false" canBeRemoved="false">
+			<propertiesList fixe="true" open="false">
+				<propertyChoice/>
+				<properties>
+					<property name="Niveau de richesse" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+					</property>
+				</properties>
+			</propertiesList>
+		</property>
+	</properties>
+	<beforeChangeValueListeners>
+		<listener class="com.mrprez.gencross.listener.custom.CustomBeforeChangeValueListener">
+			<pattern>Héritage#Sang [1-2]</pattern>
+			<arg name="method">checkHeritageSang</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomBeforeChangeValueListener">
+			<pattern>Héritage#Figure[^#]*</pattern>
+			<arg name="method">checkHeritageFigure</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomBeforeChangeValueListener">
+			<pattern>Héritage#Figure [^#]*#Choix compétence</pattern>
+			<arg name="method">checkChoixCompetence</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomBeforeChangeValueListener">
+			<pattern>Héritage#Sang [1-2]#Choix compétence</pattern>
+			<arg name="method">checkChoixCompetence</arg>
+		</listener>
+	</beforeChangeValueListeners>
+	<afterChangeValueListeners>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Sang</pattern>
+			<arg name="method">changeSang</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Tribu/Nation/Cité-Etat</pattern>
+			<arg name="method">changeClan</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Tribu/Nation/Cité-Etat#Choix caractéristique</pattern>
+			<arg name="method">changeChoixCarac</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Parole</pattern>
+			<arg name="method">changeParole</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Parole#Choix compétence</pattern>
+			<arg name="method">changeChoixCompetence</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Compétences#[^#]*</pattern>
+			<arg name="method">changeFigure</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Compétences#Le Sorcier#Verbe sacré</pattern>
+			<arg name="method">changeVerbeSacre</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Héritage#[^#]*#Choix compétence[^#]*</pattern>
+			<arg name="method">changeChoixCompetence</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Héritage#[^#]*#Choix caractéristique</pattern>
+			<arg name="method">changeChoixCarac</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Héritage#Sang [1-2]</pattern>
+			<arg name="method">changeHeritageSang</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Héritage#Figure[^#]*</pattern>
+			<arg name="method">changeHeritageFigure</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Héritage#Dragon</pattern>
+			<arg name="method">changeHeritageDragon</arg>
+		</listener>
+	</afterChangeValueListeners>
+	<beforeAddPropertyListeners/>
+	<afterAddPropertyListeners/>
+	<beforeDeletePropertyListeners/>
+	<afterDeletePropertyListeners/>
+	<passToNextPhaseListeners>
+		<listener class="com.mrprez.gencross.listener.custom.CustomPassToNextPhaseListener">
+			<phase>Le sang et la parole</phase>
+			<arg name="method">endSangParole</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.EditableListener">
+			<phase>Le sang et la parole</phase>
+			<arg name="propertyName">Sang</arg>
+			<arg name="editable">false</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.EditableListener">
+			<phase>Le sang et la parole</phase>
+			<arg name="propertyName">Tribu/Nation/Cité-Etat</arg>
+			<arg name="editable">false</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.EditableListener">
+			<phase>Le sang et la parole</phase>
+			<arg name="propertyName">Parole</arg>
+			<arg name="editable">false</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.ToEmptyListener">
+			<phase>Le sang et la parole</phase>
+			<arg name="toEmpty">true</arg>
+			<arg name="pointPool">Vertus Héroïques</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.ToEmptyListener">
+			<phase>Vertus</phase>
+			<arg name="toEmpty">true</arg>
+			<arg name="pointPool">Caractéristiques</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.SetMinListener">
+			<phase>Vertus</phase>
+			<arg name="pattern">Caractéristiques#[^#]*</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.EditableListener">
+			<phase>Vertus</phase>
+			<arg name="pattern">Caractéristiques#[^#]*</arg>
+			<arg name="editable">true</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.EditableListener">
+			<phase>Caractéristiques</phase>
+			<arg name="pattern">Compétences#[^#]*</arg>
+			<arg name="editable">true</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomPassToNextPhaseListener">
+			<phase>Figures</phase>
+			<arg name="method">passToCompetences</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.ToEmptyListener">
+			<phase>Figures</phase>
+			<arg name="toEmpty">true</arg>
+			<arg name="pointPool">Compétences</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.ToEmptyListener">
+			<phase>Figures</phase>
+			<arg name="toEmpty">true</arg>
+			<arg name="pointPool">Verbes</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.ToEmptyListener">
+			<phase>Figures</phase>
+			<arg name="toEmpty">true</arg>
+			<arg name="pointPool">Elements magiques</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomPassToNextPhaseListener">
+			<phase>Competences</phase>
+			<arg name="method">passToFinition</arg>
+		</listener>
+	</passToNextPhaseListeners>
+	<formulas>
+		<formula>Héroïsme=( #Vertus Héroïques#Bravoure# + #Vertus Héroïques#Fidélité# + #Vertus Héroïques#Foi# )/3.0</formula>
+		<formula>Combat#Trempe= #Caractéristiques#Souffle# + #Héroisme# </formula>
+		<formula>Combat#Défense= #Caractéristiques#Coordination# + #Compétences#L'Aventurier#Epreuve# +6.0</formula>
+	</formulas>
+	<history>
+		<historyItem action="2">
+			<absoluteName>Sang</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.StringValue"></Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.StringValue">Saabi</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Le sang et la parole</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Tribu/Nation/Cité-Etat</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.StringValue"></Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.StringValue">Ibn Malik Abd-al-Hassan</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Le sang et la parole</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Tribu/Nation/Cité-Etat#Choix caractéristique</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.StringValue"></Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.StringValue">Coordination</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Le sang et la parole</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Parole</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.StringValue"></Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.StringValue">Le Sentier de cimeterres de feu (saabi / malik)</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Le sang et la parole</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Vertus Héroïques#Bravoure</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">6</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Vertus</phase>
+			<pointPool>Vertus Héroïques</pointPool>
+			<cost>5</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Vertus Héroïques#Foi</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Vertus</phase>
+			<pointPool>Vertus Héroïques</pointPool>
+			<cost>2</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Caractéristiques#Coordination</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">4</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Caractéristiques</phase>
+			<pointPool>Caractéristiques</pointPool>
+			<cost>1</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Caractéristiques#Charme</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Caractéristiques</phase>
+			<pointPool>Caractéristiques</pointPool>
+			<cost>2</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Caractéristiques#Souffle</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Caractéristiques</phase>
+			<pointPool>Caractéristiques</pointPool>
+			<cost>1</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Caractéristiques#Sagesse</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Caractéristiques</phase>
+			<pointPool>Caractéristiques</pointPool>
+			<cost>2</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Compétences#L'Aventurier</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Figures</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Compétences#Le Prince</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">2</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Figures</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Compétences#Le Sage</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Figures</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Compétences#Le Guerrier</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Figures</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Compétences#Le Poète</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Figures</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Compétences#Le Poète</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Figures</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Compétences#Le Poète</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Figures</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Compétences#Le Poète</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Figures</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Compétences#Le Poète</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">0</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">1</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Figures</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="1">
+			<absoluteName>Magie#Verbes#Créer</absoluteName>
+			<date>0000000000000</date>
+			<phase>Competences</phase>
+			<pointPool>Verbes</pointPool>
+			<cost>1</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Compétences#Le Guerrier#Arme</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">4</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Competences</phase>
+			<pointPool>Compétences</pointPool>
+			<cost>1</cost>
+		</historyItem>
+		<historyItem action="1">
+			<absoluteName>Magie#Elements magiques#az</absoluteName>
+			<date>0000000000000</date>
+			<phase>Competences</phase>
+			<pointPool>Elements magiques</pointPool>
+			<cost>1</cost>
+		</historyItem>
+		<historyItem action="1">
+			<absoluteName>Magie#Elements magiques#ez</absoluteName>
+			<date>0000000000000</date>
+			<phase>Competences</phase>
+			<pointPool>Elements magiques</pointPool>
+			<cost>1</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Compétences#L'Aventurier#Equitation</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">5</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Competences</phase>
+			<pointPool>Compétences</pointPool>
+			<cost>2</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Compétences#L'Aventurier#Contes*</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">4</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Competences</phase>
+			<pointPool>Compétences</pointPool>
+			<cost>1</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Compétences#L'Aventurier#Périples</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">3</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.IntValue" offset="1">4</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Competences</phase>
+			<pointPool>Compétences</pointPool>
+			<cost>1</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Héritage#Sang 1</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.StringValue"></Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.StringValue">14</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Finitions</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Héritage#Sang 1</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.StringValue">14</Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.StringValue">13</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Finitions</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Héritage#Sang 2</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.StringValue"></Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.StringValue">6</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Finitions</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Héritage#Sang 2#Choix compétence</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.StringValue"></Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.StringValue">Le Guerrier#Arme</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Finitions</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Héritage#Figure principale</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.StringValue"></Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier.12</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Finitions</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Héritage#Dragon</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.StringValue"></Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.StringValue">9</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Finitions</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+		<historyItem action="2">
+			<absoluteName>Héritage#Dragon#Choix compétence</absoluteName>
+			<oldValue>
+				<Value class="com.mrprez.gencross.value.StringValue"></Value>
+			</oldValue>
+			<newValue>
+				<Value class="com.mrprez.gencross.value.StringValue">L'Aventurier#Equitation</Value>
+			</newValue>
+			<date>0000000000000</date>
+			<phase>Finitions</phase>
+			<pointPool></pointPool>
+			<cost>0</cost>
+		</historyItem>
+	</history>
+</personnage>

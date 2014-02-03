@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="genCross.plugin.name">Capharnaum</entry>
+	<entry key="genCross.plugin.className">com.mrprez.gencross.impl.capharnaum.Capharnaum</entry>
+	<entry key="genCross.plugin.gcrFileName">com/mrprez/gencross/impl/capharnaum/Capharnaum.gcr</entry>
+	<entry key="genCross.plugin.version">1.0</entry>
+	<entry key="genCross.plugin.appendixFileName">com/mrprez/gencross/impl/capharnaum/Capharnaum.properties</entry>
+	
+</properties>
+

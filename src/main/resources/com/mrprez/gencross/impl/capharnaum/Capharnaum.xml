@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personnage name="Capharnaum" version="1.0" gencrossVersion="1.10"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="http://mrprez.dyndns.org:8080/gencross-web/gencross-plugin.xsd">
+	<phase name="Le sang et la parole"/>
+	<phaseList>
+		<phase name="Le sang et la parole"/>
+		<phase name="Vertus"/>
+		<phase name="Caractéristiques"/>
+		<phase name="Figures"/>
+		<phase name="Competences"/>
+		<phase name="Finitions"/>
+		<phase name="Héritier des Dragons"/>
+	</phaseList>
+	<pointPools>
+		<pool name="Vertus Héroïques" remaining="7" total="10"/>
+		<pool name="Caractéristiques" remaining="6" total="6"/>
+		<pool name="Compétences" remaining="5" total="5"/>
+		<pool name="Verbes" remaining="0" total="0"/>
+		<pool name="Elements magiques" remaining="0" total="0"/>
+		<pool name="Contacts" remaining="0" total="0" toEmpty="true"/>
+	</pointPools>
+	<properties>
+		<property name="Nom" editable="true" canBeRemoved="false">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+		</property>
+		<property name="Sang" editable="true" canBeRemoved="false">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+			<valueChoice>
+				<Value class="com.mrprez.gencross.value.StringValue">Agalanthéen</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Escarte</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Saabi</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Shiradi</Value>
+			</valueChoice>
+		</property>
+		<property name="Tribu/Nation/Cité-Etat" editable="true" canBeRemoved="false">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+			<valueChoice>
+			</valueChoice>
+		</property>
+		<property name="Parole" editable="true" canBeRemoved="false">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+			<valueChoice>
+				<Value class="com.mrprez.gencross.value.StringValue">Le Sentier de cimeterres de feu (saabi / malik)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">L'alchimie des hommes (saabi / mussah)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Le soupçon des traîtres (saabi / rachid)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les dunes de Safran (saabi / yucef)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les enfants du souk (saabi / aziz)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les Walad Badiya (saabi / khalil)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les Marcheurs aux semelles de sang (saabi / tufiq)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les filles aimées d’Agushaya (saabi / mimoun)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les prieurs des sables (saabi / mammud)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les Lions Rouges de Shirad (shiradi / ashkenim)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">La Voix céleste de Shirad (shiradi / pharatim)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Le cœur sacré de Shirad (shiradi / salonim)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les assassins de la Lune de Sang (shiradi / salonim)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">L’Ordre des myrmidons théréméens (agalantheen / thereme)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les Auriges fragrantins (agalantheen / fragrance)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les Bacchorantes étrusiens (agalantheen / etrusie)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Les Duellistes de San Llorente de Valladòn (escarte / aragon)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Sainte Gerta qui pourfendit le dragon (escarte / dorkadie)</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Ordre du Temple de Sagrada (escarte / occidentine)</Value>
+			</valueChoice>
+		</property>
+		<property name="Occupation" editable="true" canBeRemoved="false">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+		</property>
+		<property name="Vertus Héroïques" editable="false" canBeRemoved="false">
+			<propertiesList fixe="true" open="false">
+				<properties>
+					<property name="Bravoure" editable="true" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">6</Value>
+						</max>
+					</property>
+					<property name="Fidélité" editable="true" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">6</Value>
+						</max>
+					</property>
+					<property name="Foi" editable="true" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">6</Value>
+						</max>
+					</property>
+				</properties>
+			</propertiesList>
+			<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+				<pointPool>Vertus Héroïques</pointPool>
+				<args></args>
+			</historyFactory>
+		</property>
+		<property name="Héroïsme" editable="false" canBeRemoved="false">
+			<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+		</property>
+		<property name="Caractéristiques" editable="false" canBeRemoved="false">
+			<propertiesList fixe="true" open="false">
+				<properties>
+					<property name="Coordination" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						</max>
+					</property>
+					<property name="Charme" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						</max>
+					</property>
+					<property name="Puissance" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						</max>
+					</property>
+					<property name="Souffle" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						</max>
+					</property>
+					<property name="Sagesse" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						</min>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">4</Value>
+						</max>
+					</property>
+				</properties>
+			</propertiesList>
+			<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+				<pointPool>Caractéristiques</pointPool>
+				<args></args>
+			</historyFactory>
+		</property>
+		<property name="Combat" editable="false" canBeRemoved="false">
+			<propertiesList fixe="true" open="false">
+				<properties>
+					<property name="Défense" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">8</Value>
+					</property>
+					<property name="PV" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">10</Value>
+					</property>
+					<property name="Init. Max." editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+					</property>
+					<property name="Trempe" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+					</property>
+				</properties>
+			</propertiesList>
+		</property>
+		<property name="Compétences" editable="false" canBeRemoved="false">
+			<propertiesList fixe="true" open="true">
+				<properties>
+					<property name="L'Aventurier" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<valueChoice>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						</valueChoice>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property name="Epreuve" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Equitation" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Contes*" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Périples" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property name="Le Sage" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<valueChoice>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						</valueChoice>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property name="Science" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Enseigner*" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Peuples &#38; Histoire" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Percevoir" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property name="Le Prince" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<valueChoice>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						</valueChoice>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property name="Ne pas perdre la face" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Elégance" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Flatter*" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Négoce &#38; Salamalecs" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property name="Le Sorcier" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<valueChoice>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						</valueChoice>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property name="Inspiration" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+								</property>
+								<property name="Prière" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+								</property>
+								<property name="Sacrifice" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Verbe sacré" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property name="Le Guerrier" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<valueChoice>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						</valueChoice>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property name="Arme" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Commander" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Entraînement" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Impressionner" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property name="Le Poète" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<valueChoice>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						</valueChoice>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property name="Galvaniser*" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Comédie" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Poésie" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Musique" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property name="Le Malandrin" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<valueChoice>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						</valueChoice>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property name="Assassinat*" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Détrousser" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Discrétion" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="S'introduire" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property name="Le Travailleur" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<valueChoice>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+							<Value class="com.mrprez.gencross.value.IntValue">3</Value>
+						</valueChoice>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property name="Agriculture" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Artisanat" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Compagnonnage" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+								</property>
+								<property name="Tenir le coup*" editable="false" canBeRemoved="false">
+									<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+				</properties>
+			</propertiesList>
+		</property>
+		<property name="Magie" editable="false" canBeRemoved="false">
+			<propertiesList fixe="true" open="false">
+				<properties>
+					<property name="Verbes" editable="false" canBeRemoved="false">
+						<propertiesList fixe="false" open="false">
+							<properties></properties>
+							<propertyChoice>
+								<property name="Créer" editable="false" canBeRemoved="true"/>
+								<property name="Transformer" editable="false" canBeRemoved="true"/>
+								<property name="Détruire" editable="false" canBeRemoved="true"/>
+							</propertyChoice>
+						</propertiesList>
+						<historyFactory class="com.mrprez.gencross.history.ConstantHistoryFactory">
+							<pointPool>Verbes</pointPool>
+							<args><arg key="cost">1</arg></args>
+						</historyFactory>
+					</property>
+					<property name="Elements magiques" editable="false" canBeRemoved="false">
+						<propertiesList fixe="false" open="true">
+							<properties></properties>
+							<defaultProperty>
+								<property editable="false" name=""></property>
+							</defaultProperty>
+						</propertiesList>
+						<historyFactory class="com.mrprez.gencross.history.ConstantHistoryFactory">
+							<pointPool>Elements magiques</pointPool>
+							<args><arg key="cost">1</arg></args>
+						</historyFactory>
+					</property>
+				</properties>
+			</propertiesList>
+		</property>
+		<property name="Héritage" editable="false" canBeRemoved="false">
+			<propertiesList fixe="true" open="false">
+				<properties>
+					<property name="Sang 1" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.StringValue"></Value>
+						<valueChoice>
+						</valueChoice>
+					</property>
+					<property name="Sang 2" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.StringValue"></Value>
+						<valueChoice>
+						</valueChoice>
+					</property>
+					<property name="Figure principale" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.StringValue"></Value>
+						<valueChoice>
+						</valueChoice>
+					</property>
+					<property name="Figure 1" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.StringValue"></Value>
+						<valueChoice>
+						</valueChoice>
+					</property>
+					<property name="Figure 2" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.StringValue"></Value>
+						<valueChoice>
+						</valueChoice>
+					</property>
+					<property name="Dragon" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.StringValue"></Value>
+						<valueChoice>
+							<Value class="com.mrprez.gencross.value.StringValue">3</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">4</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">5</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">6</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">7</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">8</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">9</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">10</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">11</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">12</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">13</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">14</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">15</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">16</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">17</Value>
+							<Value class="com.mrprez.gencross.value.StringValue">18-Dé Dragon</Value>
+						</valueChoice>
+					</property>
+				</properties>
+			</propertiesList>
+		</property>
+		<property name="Possessions" editable="false" canBeRemoved="false">
+			<propertiesList fixe="true" open="false">
+				<properties>
+					<property name="Niveau de richesse" editable="false" canBeRemoved="false">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+					</property>
+				</properties>
+			</propertiesList>
+		</property>
+	</properties>
+	<beforeChangeValueListeners>
+		<listener class="com.mrprez.gencross.listener.custom.CustomBeforeChangeValueListener">
+			<pattern>Héritage#Sang [1-2]</pattern>
+			<arg name="method">checkHeritageSang</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomBeforeChangeValueListener">
+			<pattern>Héritage#Figure[^#]*</pattern>
+			<arg name="method">checkHeritageFigure</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomBeforeChangeValueListener">
+			<pattern>Héritage#Figure [^#]*#Choix compétence</pattern>
+			<arg name="method">checkChoixCompetence</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomBeforeChangeValueListener">
+			<pattern>Héritage#Sang [1-2]#Choix compétence</pattern>
+			<arg name="method">checkChoixCompetence</arg>
+		</listener>
+	</beforeChangeValueListeners>
+	<afterChangeValueListeners>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Sang</pattern>
+			<arg name="method">changeSang</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Tribu/Nation/Cité-Etat</pattern>
+			<arg name="method">changeClan</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Tribu/Nation/Cité-Etat#Choix caractéristique</pattern>
+			<arg name="method">changeChoixCarac</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Parole</pattern>
+			<arg name="method">changeParole</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Parole#Choix compétence</pattern>
+			<arg name="method">changeChoixCompetence</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Compétences#[^#]*</pattern>
+			<arg name="method">changeFigure</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Compétences#Le Sorcier#Verbe sacré</pattern>
+			<arg name="method">changeVerbeSacre</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Héritage#[^#]*#Choix compétence[^#]*</pattern>
+			<arg name="method">changeChoixCompetence</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Héritage#[^#]*#Choix caractéristique</pattern>
+			<arg name="method">changeChoixCarac</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Héritage#Sang [1-2]</pattern>
+			<arg name="method">changeHeritageSang</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Héritage#Figure[^#]*</pattern>
+			<arg name="method">changeHeritageFigure</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Héritage#Dragon</pattern>
+			<arg name="method">changeHeritageDragon</arg>
+		</listener>
+	</afterChangeValueListeners>
+	<beforeAddPropertyListeners/>
+	<afterAddPropertyListeners>
+	</afterAddPropertyListeners>
+	<beforeDeletePropertyListeners/>
+	<afterDeletePropertyListeners/>
+	<passToNextPhaseListeners>
+		<listener class="com.mrprez.gencross.listener.custom.CustomPassToNextPhaseListener">
+			<phase>Le sang et la parole</phase>
+			<arg name="method">endSangParole</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.EditableListener">
+			<phase>Le sang et la parole</phase>
+			<arg name="propertyName">Sang</arg>
+			<arg name="editable">false</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.EditableListener">
+			<phase>Le sang et la parole</phase>
+			<arg name="propertyName">Tribu/Nation/Cité-Etat</arg>
+			<arg name="editable">false</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.EditableListener">
+			<phase>Le sang et la parole</phase>
+			<arg name="propertyName">Parole</arg>
+			<arg name="editable">false</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.ToEmptyListener">
+			<phase>Le sang et la parole</phase>
+			<arg name="pointPool">Vertus Héroïques</arg>
+			<arg name="toEmpty">true</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.ToEmptyListener">
+			<phase>Vertus</phase>
+			<arg name="pointPool">Caractéristiques</arg>
+			<arg name="toEmpty">true</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.SetMinListener">
+			<phase>Vertus</phase>
+			<arg name="pattern">Caractéristiques#[^#]*</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.EditableListener">
+			<phase>Vertus</phase>
+			<arg name="pattern">Caractéristiques#[^#]*</arg>
+			<arg name="editable">true</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.EditableListener">
+			<phase>Caractéristiques</phase>
+			<arg name="pattern">Compétences#[^#]*</arg>
+			<arg name="editable">true</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomPassToNextPhaseListener">
+			<phase>Figures</phase>
+			<arg name="method">passToCompetences</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.ToEmptyListener">
+			<phase>Figures</phase>
+			<arg name="pointPool">Compétences</arg>
+			<arg name="toEmpty">true</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.ToEmptyListener">
+			<phase>Figures</phase>
+			<arg name="pointPool">Verbes</arg>
+			<arg name="toEmpty">true</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.impl.ToEmptyListener">
+			<phase>Figures</phase>
+			<arg name="pointPool">Elements magiques</arg>
+			<arg name="toEmpty">true</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomPassToNextPhaseListener">
+			<phase>Competences</phase>
+			<arg name="method">passToFinition</arg>
+		</listener>
+	</passToNextPhaseListeners>
+	<formulas>
+		<formula>Héroïsme=(#Vertus Héroïques#Bravoure# + #Vertus Héroïques#Fidélité# + #Vertus Héroïques#Foi#) / 3</formula>
+		<formula>Combat#Défense=#Caractéristiques#Coordination# + #Compétences#L'Aventurier#Epreuve# + 6</formula>
+		<formula>Combat#Trempe=#Caractéristiques#Souffle# + #Héroisme#</formula>
+	</formulas>
+	<history/>
+</personnage>
